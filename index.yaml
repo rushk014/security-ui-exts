@@ -22,4 +22,27 @@ entries:
     urls:
     - assets/sbomscanner-ui-ext/sbomscanner-ui-ext-0.7.2.tgz
     version: 0.7.2
-generated: "2026-05-04T13:45:20.424254966Z"
+  vulnerability-scanner:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: SUSE Security Vulnerability Scanner
+      catalog.cattle.io/kube-version: '>= v1.16.0-0'
+      catalog.cattle.io/namespace: cattle-ui-plugin-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux, windows
+      catalog.cattle.io/rancher-version: '>= 2.11.0-0'
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/ui-component: plugins
+      catalog.cattle.io/ui-extensions-version: '>= 3.0.0 < 4.0.0'
+    apiVersion: v2
+    appVersion: 0.8.0
+    created: "2026-05-14T03:40:09.073318482Z"
+    description: SUSE Security Vulnerability Scanner extension for Rancher Manager
+    digest: a65bf0596c8f06382aac84b5f3c59b273d4a1bfe15473c4f7ae684bac4e79f3e
+    icon: https://raw.githubusercontent.com/rancher/security-ui-exts/main/pkg/vulnerability-scanner/assets/img/icon-vulnerability-scanner.svg
+    name: vulnerability-scanner
+    type: application
+    urls:
+    - assets/vulnerability-scanner/vulnerability-scanner-0.8.0.tgz
+    version: 0.8.0
+generated: "2026-05-14T03:40:09.072931302Z"
