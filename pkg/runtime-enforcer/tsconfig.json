@@ -41,7 +41,8 @@
         "@rancher/components/*"
       ],
       "@tests/*": ["./tests/*"],
-      "@runtime-enforcer/*": ["./pkg/runtime-enforcer/*"]
+      "@runtime-enforcer/*": ["./*"],
+      "@common/*": ["../common/*"]
     }
   },
   "include": [

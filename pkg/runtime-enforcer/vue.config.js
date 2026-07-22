@@ -14,6 +14,8 @@ module.exports = () => {
     }
     // Add the @runtime-enforcer alias to point to the pkg/runtime-enforcer directory.
     config.resolve.alias['@runtime-enforcer'] = path.resolve(__dirname);
+    // Add the @common alias so shared components in pkg/common are bundled with this extension.
+    config.resolve.alias['@common'] = path.resolve(__dirname, '../common');
   };
 
   // Create an override for __tests__ directories.
