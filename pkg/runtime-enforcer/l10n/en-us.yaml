@@ -355,6 +355,7 @@ runtimeEnforcer:
     policyName: Policy Name
     description: Description
     descriptionPlaceholder: Any text you want that better describes this configuration
+    readMore: read more
     containerName: Container Name
     allowedExecutablesTooltip: The set of executables permitted to run in this container. In Protect mode, anything not listed is blocked at the kernel boundary; in Monitor mode it's alerted only.
     executablePlaceholder: /usr/bin/executable

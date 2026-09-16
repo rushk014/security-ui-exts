@@ -153,6 +153,7 @@ const metaProperties = computed<MetadataProperty[]>(() => [
               v-if="policy?.description"
               :text="policy.description"
               :lines="3"
+              read-more-key="runtimeEnforcer.activePolicy.readMore"
           />
         </div>
         <div class="resource-header-actions">

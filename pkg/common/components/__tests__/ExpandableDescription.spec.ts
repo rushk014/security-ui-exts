@@ -70,6 +70,18 @@ describe('ExpandableDescription.vue', () => {
       expect(wrapper.find('.read-more-btn').text()).toBe('imageScanner.general.readMore');
     });
 
+    it('labels the "read more" button with the readMoreKey prop', async () => {
+      wrapper = createWrapper({ readMoreKey: 'runtimeEnforcer.activePolicy.readMore' });
+
+      mockDimensions(wrapper.vm.$refs.content, 100, 60);
+
+      wrapper.vm.checkTruncation();
+      await wrapper.vm.$nextTick();
+      await wrapper.vm.$nextTick();
+
+      expect(wrapper.find('.read-more-btn').text()).toBe('runtimeEnforcer.activePolicy.readMore');
+    });
+
     it('hides the "read more" button when text fits perfectly', async () => {
       wrapper = createWrapper();
 
